@@ -35,13 +35,13 @@
 }
 
 .social-link a:hover {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .footer-icon {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: $second-text-color;
 }
 
 .social-link:last-child a {

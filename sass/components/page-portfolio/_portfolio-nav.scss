@@ -12,7 +12,7 @@
 }
 
 .portfolio-nav .item {
-  background-color: var(--second-bg-color);
+  background-color: $second-bg-color;
   margin-right: 8px;
 
   /* перетворення в рядково-блочний ел*/
@@ -33,14 +33,14 @@
 }
 
 .portfolio-nav a {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-nav .item:hover,
 .portfolio-nav .item:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -48,5 +48,5 @@
 
 .portfolio-nav .item:hover a,
 .portfolio-nav .item:focus a {
-  color: var(--second-text-color);
+  color: $second-text-color;
 }

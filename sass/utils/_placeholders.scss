@@ -5,7 +5,7 @@ html {
 
 body {
   /* колір фону */
-  background-color: $second-bg-color;
+  background-color: $second-text-color;
   /*колір основного тексту*/
   color: $primary-text-color;
   font-family: Roboto;
@@ -51,4 +51,27 @@ ul {
 /*-Заберає підкреслення ссилок-*/
 a {
   text-decoration: none;
+}
+
+/*-button (базовий стиль)-*/
+.button {
+  color: $second-text-color;
+  background-color: $accent-color;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* перетворення в рядково-блочний ел*/
+  display: inline-flex;
+  /* заокруглення кнопки*/
+  border-width: 0px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* забирає обводку при натисканні */
+  outline: none;
 }
