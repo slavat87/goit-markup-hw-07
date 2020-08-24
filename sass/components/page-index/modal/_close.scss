@@ -1,0 +1,30 @@
+.close {
+  display: flex;
+
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  margin-left: auto;
+}
+
+.icon-close {
+  width: 11px;
+  height: 11px;
+
+  fill: Solid #000000;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: inline-block;
+}
+
+.close:hover .icon-close {
+  fill: #2196f3;
+}

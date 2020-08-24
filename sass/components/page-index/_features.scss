@@ -1,0 +1,55 @@
+/* -Особливості- */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list .item {
+  width: 270px;
+}
+
+.features-list .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features-icon {
+  display: flex;
+  height: 120px;
+  /*вирівнює картинку по центру*/
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--second-bg-color);
+  border-radius: 4px;
+}
+
+.features-icon .icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--third-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.features h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}

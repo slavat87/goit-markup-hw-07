@@ -1,0 +1,49 @@
+/* contact list */
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact li {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-right: 30px;
+  display: flex;
+}
+
+.contact span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-left: 10px;
+}
+
+.contact li:last-child {
+  margin-right: 0px;
+}
+
+.contact a {
+  color: var(--third-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 11.2px;
+  fill: currentColor;
+}
+
+.icon-vector {
+  width: 10px;
+  height: 14.94px;
+  fill: currentColor;
+}

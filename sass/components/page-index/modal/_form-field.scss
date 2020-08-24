@@ -1,0 +1,101 @@
+.form-field {
+  position: relative;
+
+  margin-bottom: 10px;
+  margin-right: 32px;
+  margin-left: 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field input {
+  width: 448px;
+  height: 40px;
+
+  padding: 12px 42px;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.form-field input:focus + .form-icon {
+  fill: #2196f3;
+}
+
+.form-field label {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--third-text-color);
+}
+
+.form-icon {
+  position: absolute;
+  /*bottom: 20px;*/
+  top: 70%;
+  left: 15px;
+
+  transform: translateY(-70%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  fill: #212121;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea {
+  resize: none;
+}
+
+.form-field textarea {
+  height: 120px;
+
+  padding: 12px 16px;
+  margin-top: 4px;
+  margin-bottom: 0;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field textarea::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field.comment {
+  margin-bottom: 20px;
+}

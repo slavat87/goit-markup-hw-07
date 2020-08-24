@@ -1,0 +1,52 @@
+.portfolio-nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  /* перетворення в FLEX контейнер(стаютьв оду лінію)*/
+  display: flex;
+  margin-left: 0px;
+
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.portfolio-nav .item {
+  background-color: var(--second-bg-color);
+  margin-right: 8px;
+
+  /* перетворення в рядково-блочний ел*/
+  display: inline-block;
+  /* заокруглення кнопки*/
+  border-radius: 4px;
+  /* відступи від тексту*/
+  padding: 6px 22px;
+  text-align: center;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-nav .item:last-child {
+  margin-right: 0px;
+}
+
+.portfolio-nav a {
+  color: var(--primary-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-nav .item:hover,
+.portfolio-nav .item:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.portfolio-nav .item:hover a,
+.portfolio-nav .item:focus a {
+  color: var(--second-text-color);
+}
