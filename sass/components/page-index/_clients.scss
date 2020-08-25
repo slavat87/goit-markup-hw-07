@@ -4,15 +4,20 @@
   padding-bottom: 0;
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.clients-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
-  /*outline: 2px solid tomato;*/
+  &-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    /*outline: 2px solid tomato;*/
+  }
+
+  & h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list a {
@@ -30,11 +35,11 @@
   transition-property: border-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-list a:hover {
-  color: $accent-color;
-  border-color: $accent-color;
+  &:hover {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
 }
 
 .logo1 {
@@ -73,7 +78,7 @@
   fill: currentColor;
 }
 
-.clients h2 {
+/* .clients h2 {
   margin-top: 0;
   margin-bottom: 50px;
-}
+} */

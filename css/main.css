@@ -436,6 +436,13 @@ strong {
   padding-bottom: 200px;
 }
 
+.banner .button {
+  margin-bottom: 0;
+  /* відступи від тексту кнопки на банері*/
+  padding: 10px 32px;
+  text-align: center;
+}
+
 .banner-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -447,18 +454,28 @@ strong {
   text-transform: uppercase;
 }
 
-/*-кнопка на банері-*/
-.banner .button {
-  margin-bottom: 0;
-  /* відступи від тексту кнопки на банері*/
-  padding: 10px 32px;
-  text-align: center;
-}
-
 /* -Особливості- */
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.features p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #757575;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.features h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .features-list {
@@ -481,6 +498,9 @@ strong {
   margin-right: 0;
 }
 
+/* .features-list .item:nth-child(4n) {
+  margin-right: 0;
+} */
 .features-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,10 +523,14 @@ strong {
   height: 70px;
 }
 
-.features p {
+/* .features-icon .icon {
+  width: 70px;
+  height: 70px;
+} */
+/* .features p {
   margin-top: 0;
   margin-bottom: 0;
-  color: #757575;
+  color: $third-text-color;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -519,11 +543,31 @@ strong {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
-}
-
+} */
 /* Чим ми займаємося */
 .perform {
   padding-bottom: 94px;
+  margin-bottom: 0;
+}
+
+.perform h2 {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.perform h3 {
+  color: #ffffff;
+  /*background-color: rgba(47, 48, 58, 0.8);*/
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -548,12 +592,14 @@ strong {
   margin-right: 0;
 }
 
-.perform h2 {
+/* .perform-list .item:nth-child(3n) {
+  margin-right: 0;
+} */
+/* .perform h2 {
   padding-top: 0;
   margin-top: 0;
   margin-bottom: 50px;
-}
-
+} */
 .perform-img {
   position: relative;
 }
@@ -568,10 +614,10 @@ strong {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.perform h3 {
-  color: #ffffff;
+/* .perform h3 {
+  color: $second-text-color;
   /*background-color: rgba(47, 48, 58, 0.8);*/
-  font-family: Roboto;
+/* font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -581,8 +627,7 @@ strong {
   padding-bottom: 27px;
   margin-top: 0;
   margin-bottom: 0;
-}
-
+} */
 /* Наша команда */
 .team {
   background-color: #f5f4fa;
@@ -613,6 +658,14 @@ strong {
   border-radius: 0px 0px 4px 4px;
 }
 
+/* .team-list .item {
+  width: 270px;
+  background-color: $second-text-color; */
+/* тінь для фону */
+/* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+} */
 .team-social:last-child a {
   margin-right: 0;
 }
@@ -678,6 +731,10 @@ strong {
   color: #ffffff;
 }
 
+/* .team-social a:hover {
+  background-color: $accent-color;
+  color: $second-text-color;
+} */
 .team-icon {
   width: 20px;
   height: 20px;
@@ -703,6 +760,11 @@ strong {
       -ms-flex-pack: justify;
           justify-content: space-between;
   /*outline: 2px solid tomato;*/
+}
+
+.clients h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .clients-list a {
@@ -771,11 +833,10 @@ strong {
   fill: currentColor;
 }
 
-.clients h2 {
+/* .clients h2 {
   margin-top: 0;
   margin-bottom: 50px;
-}
-
+} */
 /*-- Форма контакту з нами --*/
 .backdrop {
   position: fixed;
