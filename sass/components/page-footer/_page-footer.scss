@@ -2,11 +2,11 @@
   background-color: $footer-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer .footer-general {
-  padding-left: 0;
-  margin-left: 0;
-  display: flex;
-  justify-content: space-between;
+  & .footer-general {
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -22,24 +22,24 @@
   padding: 16px 15px;
 
   outline: none;
-}
 
-.form-subscription input::placeholder {
-  color: $fourth-text-color;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  margin-left: 16px;
+  &::placeholder {
+    color: $fourth-text-color;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    margin-left: 16px;
+  }
 }
 
 /*-Кнопка футера-*/
 .subscription .button {
   padding: 13px 28px;
-}
 
-.icon-send {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: $second-text-color;
+  & .icon-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: $second-text-color;
+  }
 }

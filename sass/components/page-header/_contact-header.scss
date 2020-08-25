@@ -11,6 +11,10 @@
 
   margin-right: 30px;
   display: flex;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .contact span {
@@ -19,10 +23,6 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   margin-left: 10px;
-}
-
-.contact li:last-child {
-  margin-right: 0px;
 }
 
 .contact a {

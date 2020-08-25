@@ -193,16 +193,16 @@ a {
   display: flex;
 }
 
+.contact li:last-child {
+  margin-right: 0px;
+}
+
 .contact span {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   margin-left: 10px;
-}
-
-.contact li:last-child {
-  margin-right: 0px;
 }
 
 .contact a {
@@ -414,7 +414,7 @@ strong {
   padding: 13px 28px;
 }
 
-.icon-send {
+.subscription .button .icon-send {
   width: 24px;
   height: 24px;
   margin-left: 10px;
