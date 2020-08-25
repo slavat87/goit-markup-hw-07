@@ -23,8 +23,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   display: inline-block;
+
+  .close:hover & {
+    fill: #2196f3;
+  }
 }
 
-.close:hover .icon-close {
+/* .close:hover .icon-close {
   fill: #2196f3;
-}
+} */
