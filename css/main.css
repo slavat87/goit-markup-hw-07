@@ -6,14 +6,14 @@ html {
 }
 
 body {
-  /* колір фону */
-  background-color: #ffffff;
-  /*колір основного тексту*/
-  color: #212121;
+  margin: 0;
   font-family: Roboto;
   font-weight: normal;
   letter-spacing: 0.03em;
-  margin: 0;
+  /*колір основного тексту*/
+  color: #212121;
+  /* колір фону */
+  background-color: #ffffff;
 }
 
 h2 {
@@ -28,9 +28,9 @@ img {
 }
 
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   /*обводка контейнера*/
@@ -55,9 +55,33 @@ a {
 }
 
 /*-button (базовий стиль)-*/
+/* .button { */
+/* перетворення в рядково-блочний ел*/
+/* display: inline-flex;
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $second-text-color;
+
+  background-color: $button-bg-color; */
+/* заокруглення кнопки*/
+/* border-width: 0px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+/* забирає обводку при натисканні */
+/* outline: none;
+} */
 .button {
-  color: #ffffff;
-  background-color: #2196f3;
+  /* перетворення в рядково-блочний ел*/
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   min-width: 200px;
   height: 50px;
   font-weight: bold;
@@ -68,15 +92,13 @@ a {
           align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  /* перетворення в рядково-блочний ел*/
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  color: #ffffff;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /* заокруглення кнопки*/
   border-width: 0px;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /* забирає обводку при натисканні */
   outline: none;
 }
@@ -131,22 +153,22 @@ a {
 
 /* MENU site-nav */
 .site-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link {
   position: relative;
-  color: #212121;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-right: 50px;
+  color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -166,9 +188,9 @@ a {
 
 .site-nav .current::after {
   content: "";
-  display: block;
   position: absolute;
   bottom: 0;
+  display: block;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
@@ -184,13 +206,12 @@ a {
 }
 
 .contact li {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 30px;
 }
 
 .contact li:last-child {
@@ -198,11 +219,11 @@ a {
 }
 
 .contact span {
+  margin-left: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  margin-left: 10px;
 }
 
 .contact a {
@@ -229,20 +250,20 @@ a {
 }
 
 .footer {
-  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .footer .footer-general {
-  padding-left: 0;
-  margin-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 /*footer logo*/
@@ -258,31 +279,31 @@ a {
 /*footer address*/
 .footer-address {
   width: 231px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 /* address-street */
 .address-street {
-  color: #ffffff;
   margin-bottom: 9px;
+  color: #ffffff;
 }
 
 /* address-mail */
 .address-email {
-  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .address-number {
-  color: rgba(255, 255, 255, 0.6);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 strong {
@@ -306,10 +327,10 @@ strong {
 }
 
 .footer-uppercase ul {
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .social-link a {
@@ -319,13 +340,13 @@ strong {
   display: flex;
   width: 44px;
   height: 44px;
+  margin-right: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -348,8 +369,8 @@ strong {
 
 /* ПІДПИСКА */
 .footer .subscription {
-  margin-top: 12px;
   width: 570px;
+  margin-top: 12px;
   padding-left: 0;
   margin-left: 0;
 }
@@ -364,49 +385,49 @@ strong {
 }
 
 .form-subscription input {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding: 16px 15px;
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
-  padding: 16px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
   outline: none;
 }
 
 .form-subscription input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  margin-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  margin-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-subscription input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  margin-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  margin-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-subscription input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  margin-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  margin-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-subscription input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  margin-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  margin-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*-Кнопка футера-*/
@@ -424,16 +445,16 @@ strong {
 .banner {
   max-width: 1600px;
   height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images_studio/Header.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images_studio/Header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .banner .button {
@@ -446,12 +467,12 @@ strong {
 .banner-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* -Особливості- */
@@ -463,10 +484,10 @@ strong {
 .features p {
   margin-top: 0;
   margin-bottom: 0;
-  color: #757575;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
+  color: #757575;
 }
 
 .features h3 {
@@ -479,15 +500,15 @@ strong {
 }
 
 .features-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .features-list .item {
@@ -506,14 +527,14 @@ strong {
   display: -ms-flexbox;
   display: flex;
   height: 120px;
-  /*вирівнює картинку по центру*/
-  background-position: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*вирівнює картинку по центру*/
+  background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -557,18 +578,17 @@ strong {
 }
 
 .perform h3 {
-  color: #ffffff;
-  /*background-color: rgba(47, 48, 58, 0.8);*/
-  font-family: Roboto;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  margin-top: 0;
-  margin-bottom: 0;
+  color: #ffffff;
+  /*background-color: rgba(47, 48, 58, 0.8);*/
 }
 
 .perform-list {
@@ -638,15 +658,15 @@ strong {
 }
 
 .team-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .team-list .item {
@@ -671,21 +691,21 @@ strong {
 }
 
 .team p {
-  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 16px;
+  color: #757575;
 }
 
 .team h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
   padding-top: 0;
   margin-top: 30px;
   margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .team h2 {
@@ -727,8 +747,8 @@ strong {
 }
 
 .team-social a:hover {
-  background-color: #2196f3;
   color: #ffffff;
+  background-color: #2196f3;
 }
 
 /* .team-social a:hover {
@@ -750,15 +770,15 @@ strong {
 }
 
 .clients-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   /*outline: 2px solid tomato;*/
 }
 
@@ -774,16 +794,16 @@ strong {
   display: flex;
   width: 170px;
   height: 90px;
+  margin-right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #afb1b8;
   color: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-right: 0;
   -webkit-transition-property: border-color, color;
   transition-property: border-color, color;
   -webkit-transition-duration: 250ms;
@@ -871,13 +891,13 @@ strong {
   width: 528px;
   max-height: 90vh;
   overflow-y: auto;
+  padding: 8px 8px 40px 8px;
+  margin-left: auto;
+  margin-right: auto;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 8px 8px 40px 8px;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 500ms;
@@ -893,14 +913,14 @@ strong {
 }
 
 .form h1 {
+  margin-top: 2px;
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-top: 2px;
-  margin-bottom: 12px;
 }
 
 /* .is-hidden form {
@@ -931,12 +951,13 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-left: auto;
 }
 
 .icon-close {
+  display: inline-block;
   width: 11px;
   height: 11px;
   fill: Solid #000000;
@@ -946,7 +967,6 @@ strong {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-block;
 }
 
 .close:hover .icon-close {
@@ -958,9 +978,6 @@ strong {
 } */
 .form-field {
   position: relative;
-  margin-bottom: 10px;
-  margin-right: 32px;
-  margin-left: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,6 +985,9 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 32px;
+  margin-left: 32px;
   -webkit-transition-property: border-color;
   transition-property: border-color;
   -webkit-transition-duration: 250ms;
@@ -977,13 +997,12 @@ strong {
 }
 
 .form-field input {
+  /* box-sizing: border-box; */
   width: 448px;
   height: 40px;
   padding: 12px 42px;
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 4px;
   -webkit-transition-property: border-color;
   transition-property: border-color;
@@ -1016,7 +1035,6 @@ strong {
 
 .form-icon {
   position: absolute;
-  /*bottom: 20px;*/
   top: 70%;
   left: 15px;
   -webkit-transform: translateY(-70%);
@@ -1037,11 +1055,12 @@ strong {
   resize: none;
 } */
 .form-field textarea {
+  width: 448px;
   height: 120px;
-  resize: none;
   padding: 12px 16px;
   margin-top: 4px;
   margin-bottom: 0;
+  resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1145,12 +1164,12 @@ strong {
 }
 
 .consent-text {
+  margin-left: 8.38px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 8.38px;
 }
 
 .consent-contract a {
@@ -1158,15 +1177,16 @@ strong {
   color: #2196f3;
 }
 
-.form button {
+/* .form button */
+.form .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 200px;
-  height: 50px;
+  /* width: 200px;
+  height: 50px; */
   padding-top: 10px;
   padding-right: auto;
   padding-bottom: 10px;
@@ -1175,22 +1195,23 @@ strong {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  outline: none;
-  background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $second-text-color; */
+  /* background: #2196f3;
   border-radius: 4px;
   border-color: #2196f3;
   border-style: solid;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.88;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none; */
+}
+
+.form .button:focus, .form .button:hover {
+  fill: #188ce8;
 }
 
 .our-works {
@@ -1199,11 +1220,6 @@ strong {
 }
 
 .portfolio-nav {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  /* перетворення в FLEX контейнер(стаютьв оду лінію)*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1212,18 +1228,23 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  /* перетворення в FLEX контейнер(стаютьв оду лінію)*/
 }
 
 .portfolio-nav .item {
-  background-color: #f5f4fa;
-  margin-right: 8px;
   /* перетворення в рядково-блочний ел*/
   display: inline-block;
-  /* заокруглення кнопки*/
-  border-radius: 4px;
+  text-align: center;
   /* відступи від тексту*/
   padding: 6px 22px;
-  text-align: center;
+  margin-right: 8px;
+  background-color: #f5f4fa;
+  /* заокруглення кнопки*/
+  border-radius: 4px;
   -webkit-transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, box-shadow;
@@ -1257,8 +1278,6 @@ strong {
 }
 
 .portfolio {
-  margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1267,6 +1286,8 @@ strong {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio .item {
@@ -1285,14 +1306,6 @@ strong {
   margin-right: 0;
 }
 
-/* .portfolio .item:hover {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio .item:nth-child(3n) {
-  margin-right: 0;
-} */
 .portfolio-img {
   position: relative;
   overflow: hidden;
@@ -1302,21 +1315,21 @@ strong {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 100%;
   padding-left: 24px;
   padding-right: 24px;
-  color: #ffffff;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   /*opacity: 0;*/
   -webkit-transform: translateY(100%) translateY(1px);
@@ -1341,22 +1354,22 @@ strong {
 }
 
 .portfolio p {
-  color: #757575;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.9;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #757575;
 }
 
 .portfolio h4 {
-  color: #212121;
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0;
-  margin-bottom: 4px;
+  color: #212121;
 }
 /*# sourceMappingURL=main.css.map */

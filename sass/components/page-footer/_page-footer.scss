@@ -1,12 +1,13 @@
 .footer {
-  background-color: $footer-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
+  background-color: $footer-bg-color;
+
   & .footer-general {
-    padding-left: 0;
-    margin-left: 0;
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
+    margin-left: 0;
   }
 }

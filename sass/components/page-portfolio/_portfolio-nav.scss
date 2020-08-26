@@ -1,27 +1,27 @@
 .portfolio-nav {
+  display: flex;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  justify-content: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   /* перетворення в FLEX контейнер(стаютьв оду лінію)*/
-  display: flex;
-  margin-left: 0px;
-
-  margin-bottom: 50px;
-  justify-content: center;
 }
 
 .portfolio-nav .item {
-  background-color: $second-bg-color;
-  margin-right: 8px;
-
   /* перетворення в рядково-блочний ел*/
   display: inline-block;
-  /* заокруглення кнопки*/
-  border-radius: 4px;
+  text-align: center;
   /* відступи від тексту*/
   padding: 6px 22px;
-  text-align: center;
+  margin-right: 8px;
+
+  background-color: $second-bg-color;
+  /* заокруглення кнопки*/
+  border-radius: 4px;
 
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
