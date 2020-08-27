@@ -267,12 +267,12 @@ a {
 }
 
 /*footer logo*/
-.footer .logo-address {
+.footer .logo {
   padding-left: 0;
   margin-left: 0;
 }
 
-.footer .logo {
+.footer .logo .logo-address {
   margin-bottom: 20px;
 }
 
@@ -282,6 +282,7 @@ a {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -318,19 +319,19 @@ strong {
   margin-left: 0;
 }
 
+.footer .footer-uppercase ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .footer .uppercase {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
-}
-
-.footer-uppercase ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
 }
 
 .social-link a {
@@ -373,6 +374,18 @@ strong {
   margin-top: 12px;
   padding-left: 0;
   margin-left: 0;
+  /*-Кнопка футера-*/
+}
+
+.footer .subscription .button {
+  padding: 13px 28px;
+}
+
+.footer .subscription .button .icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #ffffff;
 }
 
 .email-subscription {
@@ -431,17 +444,17 @@ strong {
 }
 
 /*-Кнопка футера-*/
-.subscription .button {
+/* .subscription .button {
   padding: 13px 28px;
-}
 
-.subscription .button .icon-send {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: #ffffff;
-}
+  & .icon-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 
+    fill: $second-text-color;
+  }
+} */
 .banner {
   max-width: 1600px;
   height: 600px;
@@ -678,6 +691,47 @@ strong {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-list.social {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+/* .team-list.social {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+} */
+.team-social a {
+  /*вирівнює картинку по центру*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  color: #afb1b8;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social a:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
 /* .team-list .item {
   width: 270px;
   background-color: $second-text-color; */
@@ -713,42 +767,6 @@ strong {
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 50px;
-}
-
-.team-list.social {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 24px;
-}
-
-.team-social a {
-  /*вирівнює картинку по центру*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44px;
-  height: 44px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 10px;
-  color: #afb1b8;
-  background-color: #ffffff;
-  border-radius: 50%;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social a:hover {
-  color: #ffffff;
-  background-color: #2196f3;
 }
 
 /* .team-social a:hover {
@@ -1141,6 +1159,14 @@ strong {
   overflow: hidden;
 }
 
+.checkbox-input:checked + .checkbox-icon {
+  background-color: #2196f3;
+  background-image: url("../images_studio/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border: 2px solid #2196f3;
+}
+
 .checkbox-icon {
   display: inline-block;
   width: 16px;
@@ -1155,14 +1181,13 @@ strong {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked + .checkbox-icon {
+/* .checkbox-input:checked + .checkbox-icon {
   border: 2px solid #2196f3;
   background-color: #2196f3;
   background-image: url("../images_studio/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
-}
-
+} */
 .consent-text {
   margin-left: 8.38px;
   font-weight: normal;

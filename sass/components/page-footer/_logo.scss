@@ -1,9 +1,9 @@
 /*footer logo*/
-.footer .logo-address {
+.footer .logo {
   padding-left: 0;
   margin-left: 0;
-}
 
-.footer .logo {
-  margin-bottom: 20px;
+  & .logo-address {
+    margin-bottom: 20px;
+  }
 }

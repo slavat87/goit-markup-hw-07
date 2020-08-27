@@ -4,6 +4,19 @@
   margin-top: 12px;
   padding-left: 0;
   margin-left: 0;
+
+  /*-Кнопка футера-*/
+  & .button {
+    padding: 13px 28px;
+
+    & .icon-send {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+
+      fill: $second-text-color;
+    }
+  }
 }
 
 .email-subscription {
@@ -35,7 +48,7 @@
 }
 
 /*-Кнопка футера-*/
-.subscription .button {
+/* .subscription .button {
   padding: 13px 28px;
 
   & .icon-send {
@@ -45,4 +58,4 @@
 
     fill: $second-text-color;
   }
-}
+} */

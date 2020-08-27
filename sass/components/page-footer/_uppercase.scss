@@ -4,6 +4,11 @@
   margin-top: 12px;
   padding-left: 0;
   margin-left: 0;
+
+  & ul {
+    display: flex;
+    margin-bottom: 20px;
+  }
 }
 
 .footer .uppercase {
@@ -12,11 +17,6 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
-}
-
-.footer-uppercase ul {
-  display: flex;
-  margin-bottom: 20px;
 }
 
 .social-link a {
